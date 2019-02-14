@@ -1,0 +1,12 @@
+{
+    "name": "allab/untitled2",
+    "license": "proprietaire",
+    "type": "project",
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    },
+    "require": {
+        "symfony/var-dumper": "^4.2",
+        "symfony/console": "^4.2"
+    }
+}
