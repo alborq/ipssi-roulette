@@ -9,6 +9,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use App\Model\CaseRoulette;
 
 class ConsoleInteraction
 {
@@ -59,7 +60,7 @@ class ConsoleInteraction
         $progressBar->start();
 
 
-        $colorText = ['Rouge' => 'red', 'Noir' => 'black'];
+        $colorText = ['Rouge' => 'red', 'Noir' => 'black', 'Vert' => 'green'];
         foreach(range(0, random_int(100, 180)) as $value) {
             usleep(10000+ $value*600);
 
